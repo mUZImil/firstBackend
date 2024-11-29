@@ -1,0 +1,24 @@
+{
+  "name": "1st-project",
+  "version": "1.0.0",
+  "description": "",
+  "type": "commonjs",
+  "main": "index.js",
+  "scripts": {
+    "start": "node ./src/index.js"
+  },
+  "keywords": [
+    "1st"
+  ],
+  "author": "muzamil",
+  "license": "ISC",
+  "dependencies": {
+    "ejs": "^3.1.10",
+    "express": "^4.21.1",
+    "mongoose": "^8.8.2",
+    "nodemon": "^3.1.7"
+  },
+  "devDependencies": {
+    "dotenv": "^16.4.5"
+  }
+}

@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+</head>
+<body class="bg-[#121212] text-[white] p-24 flex flex-col justify-center gap-5">
+    <form method="post" class="flex flex-col gap-3 w-[300px] mx-auto">
+        <label for='username' class="text-[22px] font-semibold text-[#d8d8d8]">file name</label>
+        <input type="text" class="rounded p-4 bg-[black] border border-white" name="username" >
+        <label class="text-[22px] font-semibold text-[#d8d8d8]">content</label>
+        <input type="text" class="rounded p-4 bg-[black] border border-white" name="paswrd">
+        <button class="px-4 py-2 bg-[#0080e9] w-[120px] rounded-lg mx-auto mt-12">spank me</button>
+    </form>
+
+    <div class="flex gap-4">
+        <% files.map((file)=>{%>
+        <div class="p-4 bg-[black] flex flex-col gap-4 min-w-[150px]">
+            <label class="text-[22px] font-semibold"><%= file%></label>
+            <div class="flex justify-between">
+            <a class="text-[blue] text-[14px]" href="/content/<%=file%>">read more</a>
+            <a class="text-[12px] text-[gray]" href="/edit">edit</a>
+        </div>
+        </div>
+       <% })%>
+    </div>
+
+    
+   
+</body>
+</html>
